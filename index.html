@@ -1,0 +1,33 @@
+<!--
+    display a cube
+    replace the cube by another one every 5 sec, 5 times
+    overlay the sides of a qube with an image
+    rotate the cube on its axis
+    scale the cube, when it's at its smallest, it should be  replaced
+    create hiro card with QR code
+ -->
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
+    <script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
+  </head>
+
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded artoolkit='sourceType: webcam;'>
+      <a-box color="#fafafc" depth=".75" height=".75" width=".75" opactiy="0.4" position="0 .5 0">
+        <a-animation
+          attribute="rotation"
+          from="0 0 0"
+          to="0 360 0"
+          direction="normal"
+          dur="4000"
+          repeat="indefinite"
+          easing="ease">
+        </a-animation>
+        <a-entity rotation="0 0 180"></a-entity>
+      </a-box> 
+     <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
+  </body>
+</html>
