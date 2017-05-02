@@ -15,7 +15,15 @@
 
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded artoolkit='sourceType: webcam;'>
-      <a-box color="#fafafc" depth=".75" height=".75" width=".75" opactiy="0.4" position="0 .5 0">
+      <a-assets>
+        <img id="boxT" src="https://i.imgur.com/mYmmbrp.jpg">
+        <img id="zoki" src="https://royscheffers.com/images/zorana-square.jpg">
+        <img id="stone" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Balanced_Rock.jpg">
+        <img id="skyTexture"
+      src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+      </a-assets>
+        
+      <a-box src="#zoki" color="#fafafc" depth=".75" height=".75" width=".75" opactiy="0.4" position="0 .5 0">
         <a-animation
           attribute="rotation"
           from="0 0 0"
@@ -25,7 +33,8 @@
           repeat="indefinite"
           easing="ease">
         </a-animation>
-        <a-entity rotation="0 0 180"></a-entity>
+        <a-animation attribute="color" begin="click" dur="2000" from="white" to="red"></a-animation>
+
       </a-box> 
      <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
