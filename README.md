@@ -13,6 +13,6 @@ Front-end Web Developer
 
 ---
 Resources:
-https://aframe.io/docs/0.5.0/introduction/getting-started.html
-https://www.youtube.com/watch?v=v_Uj0C8sMi4
-https://jeromeetienne.github.io/AR.js/three.js/examples/arcode.html
+https://aframe.io/docs/0.5.0/introduction/getting-started.html<br />
+https://www.youtube.com/watch?v=v_Uj0C8sMi4<br />
+https://jeromeetienne.github.io/AR.js/three.js/examples/arcode.html<br />
