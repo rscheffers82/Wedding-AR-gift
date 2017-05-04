@@ -10,3 +10,9 @@
 
 By [Roy Scheffers](http://royscheffers.com)
 Front-end Web Developer
+
+---
+Resources:
+https://aframe.io/docs/0.5.0/introduction/getting-started.html
+https://www.youtube.com/watch?v=v_Uj0C8sMi4
+https://jeromeetienne.github.io/AR.js/three.js/examples/arcode.html
