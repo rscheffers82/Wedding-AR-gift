@@ -67,13 +67,21 @@ function down() {
 }
 
 function setImg() {
-  (x < 3) ? x += 1 : x = 0;
   var images = [
-    './images/zorana-square.jpg',
-    './images/bas-en-ilse-voor-hun-huis.jpg',
-    './images/stone-texture.jpg',
-    './images/bas-en-ilse-binnen-drinken.jpg'
+    './images/huisje.jpg',
+    './images/iceland.jpg',
+    './images/ilse-woof.jpg',
+    './images/boompje.jpg',
+    './images/bas-sneeuw.jpg',
+    './images/carnaval.jpg',
+    './images/biertje.jpg',
+    './images/lekker-sportief.jpg',
+    './images/eten.jpg',
   ];
+
+  (x < images.length - 1) ? x += 1 : x = 0;
+  console.log('x: ', x);
+  console.log('image: ', images[x]);
 
   var cubeEl = document.getElementById('photo-cube');
   cubeEl.setAttribute('src', images[x]);
