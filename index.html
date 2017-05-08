@@ -1,11 +1,3 @@
-<!--
-    display a cube
-    replace the cube by another one every 5 sec, 5 times
-    overlay the sides of a qube with an image
-    rotate the cube on its axis
-    scale the cube, when it's at its smallest, it should be  replaced
-    create hiro card with QR code
- -->
 <html>
   <head>
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
@@ -88,52 +80,10 @@ function setImg() {
   up();
 }
 </script>
-
-    <script>
-      //
-      // var up, down, rotate;
-      // var cube;
-      // var position, rotation;
-      //
-			// init();
-			// animate();
-      //
-			// function init() {
-      //   position = { x: 0, y: 0, z: 0 }
-      //   cube = document.getElementById('photo-cube');
-      //   up = new TWEEN.Tween(position)
-      //     .to({ x: 0, y: 1.25, z: 0 })
-      //     .easing(TWEEN.Easing.Elastic.InOut)
-      //     .onUpdate(update);
-      //
-      //   down = new TWEEN.Tween(position)
-      //     .to({ x: 0, y: 0, z: 0 })
-      //     .easing(TWEEN.Easing.Elastic.InOut)
-			// 		.onUpdate(update);
-      //
-      //   up.chain(down);
-      //   down.chain(up);
-      //
-      //   up.start();
-      // }
-      //
-			// function animate( time ) {
-			// 	requestAnimationFrame( animate );
-			// 	TWEEN.update( time );
-			// }
-      //
-			// function update() {
-      //   // Positioning
-      //   cube.setAttribute();
-			// 	// target.style.left = position.x + 'px';
-			// 	// target.style.top = position.y + 'px';
-			// 	// target.style.webkitTransform = 'rotate(' + Math.floor(position.rotation) + 'deg)';
-			// 	// target.style.MozTransform = 'rotate(' + Math.floor(position.rotation) + 'deg)';
-      //
-			// }
-		</script>
   </body>
 </html>
+
+
 <!--
 Texture on each face of the cube:
 https://stackoverflow.com/questions/17418118/three-js-cube-with-different-texture-on-each-face
@@ -142,24 +92,4 @@ Animations
 https://stackoverflow.com/questions/37649822/chain-linking-animations-with-aframe-io
 https://github.com/tweenjs/tween.js
 https://stackoverflow.com/questions/40417513/how-to-add-tags-dynamically-in-aframe-webvr
-
-
 -->
-<!-- <a-animation attribute="scale" from="0 0 0" to="1 1 1" direction="alternate" dur="4000" repeat="indefinite" animationstart=""></a-animation> -->
-<!-- the above is within the box -->
-<!-- place back into a-box once done -->
-<!-- <a-animation
-  attribute="rotation"
-  from="45 45 45"
-  to="45 225 45"
-  direction="alternate"
-  dur="4000"
-  repeat="indefinite"
-  easing="ease">
-</a-animation> -->
-<!-- <a-animation attribute="position" to="0 1.25 0" direction="alternate" dur="4000" repeat="indefinite"></a-animation> -->
-
-<!-- <a-entity visible="false">
-<a-text value="Behold the cube..." color="#CCC" position="0 1.5 0" scale="1"></a-text>
-<a-animation attribute="visible" begin="5000" to="true" ></a-animation>
-</a-entity> -->
